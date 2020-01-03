@@ -39,7 +39,7 @@ class GroupRepository extends AbstractRepository {
 
         $stmt = $this->pdo->prepare(
                 "SELECT 
-                    g.id, g.name as groupName, g.date, t.id as tId, t.name as tournamentName, t.token as tToken, t.year as tYear, g.type as type, g.id_fixture as idFixture
+                    g.id, g.name as groupName, g.date, g.logo, t.id as tId, t.name as tournamentName, t.token as tToken, t.year as tYear, g.type as type, g.id_fixture as idFixture
                 FROM
                     tm_group g,
                     tm_tournament t
@@ -57,7 +57,7 @@ class GroupRepository extends AbstractRepository {
         $model = $this->getModelName();
 
         $stmt = $this->pdo->prepare("SELECT 
-                    g.id, g.name as groupName, g.date, t.id as tId, t.name as tournamentName, t.token as tToken, t.year as tYear, g.type as type, g.id_fixture as idFixture
+                    g.id, g.name as groupName, g.date, g.logo, t.id as tId, t.name as tournamentName, t.token as tToken, t.year as tYear, g.type as type, g.id_fixture as idFixture
                 FROM
                     tm_group g,
                     tm_tournament t
