@@ -6,6 +6,15 @@
     <div class="row">
         <?php for ($in = 0; $in < 4; $in++) { ?>
             <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="text-center ">
+                    <?php 
+                    // Display Logo and Link to Sponsor
+                    if ($groups[$in]['logo'] != "") {
+                        echo"<img src='../image/sponsors/{$groups[$in]['logo']}' class='img-rounded' alt='{$rows[$i]['token']} - ' style='
+                                height: 70px; display: center;'/>";
+                                    }
+                    ?>                    
+                </div>
                 <div class="text-right">
                     <small>
                         <?php
@@ -52,6 +61,15 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="text-center">
+                <?php 
+                // Display Logo and Link to Sponsor
+                if ($groups[4]['logo'] != "") {
+                    echo"<img src='../image/sponsors/{$groups[4]['logo']}' class='img-rounded' alt='{$rows[$i]['token']} - ' style='
+                            height: 70px; display: center;'/>";
+                                }
+                ?>                    
+            </div>
             <div class="text-right">
                 <small>
                     <?php
@@ -95,6 +113,15 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-md-push-4">
+            <div class="text-center">
+                <?php 
+                // Display Logo and Link to Sponsor
+                if ($groups[5]['logo'] != "") {
+                    echo"<img src='../image/sponsors/{$groups[5]['logo']}' class='img-rounded' alt='{$rows[$i]['token']} - ' style='
+                            height: 70px; display: center;'/>";
+                                }
+                ?>                    
+            </div>
             <div class="text-right">
                 <small>
                     <?php
@@ -138,6 +165,15 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-md-pull-4">
+            <div class="text-center">
+                <?php 
+                // Display Logo and Link to Sponsor
+                if ($groups[6]['logo'] != "") {
+                    echo"<img src='../image/sponsors/{$groups[6]['logo']}' class='img-rounded' alt='{$rows[$i]['token']} - ' style='
+                            height: 70px; display: center;'/>";
+                                }
+                ?>                    
+            </div>
             <div class="text-right">
                 <small>
                     <?php

@@ -2,7 +2,16 @@
 <div class="page-header">
     <a class="btn btn-default" href="tournament?tournament=<?php echo $group['tId']; ?>" role="button">&Uuml;bersicht</a>
     <h3>
-        <?php echo "{$group['tournamentName']} {$group['tYear']} - {$group['groupName']}"; ?>
+        <div class="text-center">
+            <?php 
+            // Display Logo and Link to Sponsor
+            if ($group['logo'] != "") {
+                echo"<img src='../image/sponsors/{$group['logo']}' class='img-rounded' alt='{$rows[$i]['token']} - ' style='
+                        height: 100px; display: center;'/>";
+                            }
+            ?>                    
+        </div>
+        <?php echo "</br>{$group['tournamentName']} {$group['tYear']} - {$group['groupName']}"; ?>
     </h3>
 </div>
 <div class="panel-body">
