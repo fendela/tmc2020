@@ -2,6 +2,47 @@
 <div class="page-header">
     <?php echo "<h3>{$tournament['name']} {$tournament['year']}</h3>"; ?>
 </div>
+<?php if ($tournament['id']==10) {?>
+    <div class="row">
+
+            </br>
+            <div class="text-center">
+                <?php 
+                // Display Logo and Link to Sponsor
+                if ($groups[6]['logo'] != "") {
+                    echo"<img src='../image/sponsors/{$groups[6]['logo']}' class='img-rounded' alt='{$rows[$i]['token']} - ' style='
+                            height: 70px; display: center;'/>";
+                                }
+                                ?>                 
+            </div>
+
+            </br>
+    </div>
+    <div class="row">
+            <div class="col-xs-8 col-xs-push-2 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4 col-lg-2 col-lg-push-5">
+
+            <div class="panel panel-default table-responsive">
+             <div class="panel-heading text-center">
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                Turnierheft 2020
+                 
+             </div>
+                <table class="table table-default table-center">
+                    <tr>
+                        <td class="text-center">
+                <a href='../pdf/turnierheft2020.pdf' target='_blank'>
+                
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                Turnierheft 2020
+                <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+                    </a>
+                            </td>
+                    </tr>
+                </table>
+             </div></div>
+        </div>
+    </div>
+<?php } ?>
 <div class="panel-body">
     <div class="row">
         <?php for ($in = 0; $in < 4; $in++) { ?>
@@ -15,6 +56,7 @@
                                     }
                     ?>                    
                 </div>
+            </br>
                 <div class="text-right">
                     <small>
                         <?php
@@ -61,6 +103,7 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
+            </br>
             <div class="text-center">
                 <?php 
                 // Display Logo and Link to Sponsor
@@ -70,6 +113,7 @@
                                 }
                 ?>                    
             </div>
+            </br>
             <div class="text-right">
                 <small>
                     <?php
@@ -113,6 +157,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-md-push-4">
+            </br>
             <div class="text-center">
                 <?php 
                 // Display Logo and Link to Sponsor
@@ -122,6 +167,7 @@
                                 }
                 ?>                    
             </div>
+            </br>
             <div class="text-right">
                 <small>
                     <?php
@@ -165,6 +211,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-md-pull-4">
+            </br>
             <div class="text-center">
                 <?php 
                 // Display Logo and Link to Sponsor
@@ -174,6 +221,7 @@
                                 }
                 ?>                    
             </div>
+            </br>
             <div class="text-right">
                 <small>
                     <?php
